@@ -228,7 +228,6 @@ final class Rocket_FluentCart_Plugin {
     private function set_default_options() {
         $defaults = array(
             'rocket_api_url' => 'https://api.rocket.net',
-            'enable_control_panel' => 'yes',
             'primary_color' => '#0073aa',
             'secondary_color' => '#23282d',
             'accent_color' => '#00a0d2',

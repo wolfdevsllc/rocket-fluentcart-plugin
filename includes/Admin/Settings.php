@@ -131,32 +131,6 @@ class RFC_Admin_Settings {
             )
         );
 
-        // Control Panel Settings
-        add_settings_section(
-            'rfc_control_panel',
-            __('Control Panel Settings', 'rocket-fluentcart'),
-            array($this, 'control_panel_section_callback'),
-            'rocket-settings'
-        );
-
-        // Enable Control Panel
-        register_setting('rfc_settings', 'rfc_enable_control_panel', array(
-            'type' => 'string',
-            'default' => 'yes',
-        ));
-
-        add_settings_field(
-            'rfc_enable_control_panel',
-            __('Enable Control Panel', 'rocket-fluentcart'),
-            array($this, 'checkbox_field_callback'),
-            'rocket-settings',
-            'rfc_control_panel',
-            array(
-                'label_for' => 'rfc_enable_control_panel',
-                'description' => __('Allow customers to access Rocket control panel', 'rocket-fluentcart'),
-            )
-        );
-
         // Page URLs Section
         add_settings_section(
             'rfc_page_urls',
@@ -341,10 +315,6 @@ class RFC_Admin_Settings {
      */
     public function api_credentials_section_callback() {
         echo '<p>' . __('Enter your Rocket.net API credentials. These are used to authenticate with the Rocket.net API.', 'rocket-fluentcart') . '</p>';
-    }
-
-    public function control_panel_section_callback() {
-        echo '<p>' . __('Configure control panel access for your customers.', 'rocket-fluentcart') . '</p>';
     }
 
     public function page_urls_section_callback() {

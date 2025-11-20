@@ -3,7 +3,9 @@
 A WordPress plugin that enables selling Rocket.net hosting through FluentCart with on-demand site creation and management.
 
 **Version:** 0.9
+
 **Author:** WolfDevs - https://wolfdevs.com
+
 **Requires:** WordPress 6.0+, PHP 7.4+, FluentCart 1.2.2+
 
 ## Features
